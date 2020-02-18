@@ -28,17 +28,17 @@
                 <ul class="navbar-nav ml-auto">
                 	{% if user.is_authenticated %}
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'account:edit_profile' %}">Profil</a>
+                            <a class="nav-link" href="{% url 'accounts:edit_profile' %}">Profil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'account:logout' %}">Wylogowanko</a>
+                            <a class="nav-link" href="{% url 'accounts:logout' %}">Wylogowanko</a>
                         </li>
                     {% else %}
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'account:register' %}">Rejestrowanko</a>
+                            <a class="nav-link" href="{% url 'accounts:register' %}">Rejestrowanko</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{% url 'account:login' %}">Logowanko</a>
+                            <a class="nav-link" href="{% url 'accounts:login' %}">Logowanko</a>
                         </li>
                     {% endif %}
                 </ul>                
